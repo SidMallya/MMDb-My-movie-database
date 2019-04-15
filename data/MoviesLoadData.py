@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import json
 import decimal
 
-client = MongoClient("mongodb+srv://username:password@hostname.net/test?retryWrites=true")
+client = MongoClient("mongodb://localhost:27017/")
 db=client.mmdb
 
 with open("moviedata.json") as json_file:
